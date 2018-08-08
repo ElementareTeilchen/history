@@ -1,26 +1,35 @@
 {
-	"name": "aertmann/history",
-	"type": "neos-package",
-	"license": "MIT",
-	"description": "An improved history backend module for Neos",
-	"keywords": [ "history", "event-log", "neos" ],
-	"authors": [
-		{
-			"name": "Aske Ertmann",
-			"email": "aske@ertmann.co"
-		}
-	],
-	"require": {
-		"neos/neos": ">3"
-	},
-	"autoload": {
-		"psr-4": {
-			"AE\\History\\": "Classes"
-		}
-	},
-	"extra": {
-		"branch-alias": {
-			"dev-master": "1.0.x-dev"
-		}
-	}
+  "name": "aertmann/history",
+  "type": "neos-package",
+  "license": "MIT",
+  "description": "An improved history backend module for Neos",
+  "keywords": [
+    "history",
+    "event-log",
+    "neos"
+  ],
+  "authors": [
+    {
+      "name": "Aske Ertmann",
+      "email": "aske@ertmann.co"
+    },
+    {
+      "name": "Raffael Comi",
+      "email": "Raffael.Comi@elementare-teilchen.de"
+    }
+  ],
+  "require": {
+    "ext-json": "*",
+    "neos/neos": ">=3 <5"
+  },
+  "autoload": {
+    "psr-4": {
+      "AE\\History\\": "Classes"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0.x-dev"
+    }
+  }
 }

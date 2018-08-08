@@ -1,236 +1,197 @@
 /* Color palette */
 /* Sizes & margins */
-/* line 20, Module.scss */
 .neos.neos-module.neos-module-management-history .neos-history::after {
-  display: block;
-  content: "";
   clear: both;
+  content: "";
+  display: block;
 }
-/* line 27, Module.scss */
 .neos.neos-module.neos-module-management-history .neos-history-info {
   float: left;
 }
-/* line 30, Module.scss */
 .neos.neos-module.neos-module-management-history .neos-history-info .neos-tooltip-inner {
-  white-space: nowrap;
   max-width: none;
+  white-space: nowrap;
 }
-/* line 35, Module.scss */
 .neos.neos-module.neos-module-management-history .neos-history-info + p {
-  width: 100%;
-  margin-top: 20px;
   float: left;
+  margin-top: 20px;
+  width: 100%;
 }
-/* line 43, Module.scss */
 .neos.neos-module.neos-module-management-history .neos-history-day .neos-history-events {
   padding-top: 16px;
 }
-/* line 46, Module.scss */
 .neos.neos-module.neos-module-management-history .neos-history-day .neos-history-events .neos-history-date {
   margin-bottom: 16px;
 }
-/* line 49, Module.scss */
 .neos.neos-module.neos-module-management-history .neos-history-day .neos-history-events .neos-history-date .neos-history-date-inner {
-  line-height: 40px;
-  width: 40px;
-  height: 40px;
-  margin-left: -22px;
-  font-size: 12px;
   background: #3f3f3f;
+  font-size: 12px;
+  height: 40px;
+  line-height: 40px;
+  margin-left: -22px;
+  width: 40px;
 }
-/* line 59, Module.scss */
 .neos.neos-module.neos-module-management-history .neos-history-day .neos-history-events .neos-history-event {
-  padding-top: 0;
-  padding-right: 0;
-  margin-bottom: 16px;
-  background-color: #323232;
-  -webkit-background-clip: padding-box;
-  -moz-background-clip: padding;
   background-clip: padding-box;
+  background-color: #323232;
   border: 1px solid #3f3f3f;
   box-shadow: none;
+  margin-bottom: 16px;
+  padding-right: 0;
+  padding-top: 0;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
 }
-/* line 70, Module.scss */
 .neos.neos-module.neos-module-management-history .neos-history-day .neos-history-events .neos-history-event::after {
   content: none;
 }
-/* line 74, Module.scss */
 .neos.neos-module.neos-module-management-history .neos-history-day .neos-history-events .neos-history-event .neos-history-event-arrow,
 .neos.neos-module.neos-module-management-history .neos-history-day .neos-history-events .neos-history-event .neos-history-event-arrow:after {
-  position: absolute;
+  border: solid transparent;
   display: inline-block;
-  width: 0;
   height: 0;
-  border-style: solid;
-  border-color: transparent;
+  position: absolute;
+  width: 0;
 }
-/* line 84, Module.scss */
 .neos.neos-module.neos-module-management-history .neos-history-day .neos-history-events .neos-history-event .neos-history-event-arrow:after {
   content: "";
   z-index: -1;
 }
-/* line 89, Module.scss */
 .neos.neos-module.neos-module-management-history .neos-history-day .neos-history-events .neos-history-event .neos-history-event-title {
-  margin: 0;
-  padding: 13px 12px;
-  font-size: 14px;
-  line-height: 14px;
-  font-weight: bold;
-  color: #fff;
   background-color: #222;
   border-bottom: 1px solid #3f3f3f;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 14px;
+  margin: 0;
+  padding: 13px 12px;
 }
-/* line 99, Module.scss */
 .neos.neos-module.neos-module-management-history .neos-history-day .neos-history-events .neos-history-event .neos-history-event-title:empty {
   display: none;
 }
-/* line 103, Module.scss */
 .neos.neos-module.neos-module-management-history .neos-history-day .neos-history-events .neos-history-event .neos-history-event-title .neos-tooltip-inner {
-  white-space: nowrap;
   max-width: none;
+  white-space: nowrap;
 }
-/* line 108, Module.scss */
 .neos.neos-module.neos-module-management-history .neos-history-day .neos-history-events .neos-history-event .neos-history-event-title .icon-external-link {
   float: right;
 }
-/* line 113, Module.scss */
 .neos.neos-module.neos-module-management-history .neos-history-day .neos-history-events .neos-history-event .neos-history-event-content {
   padding: 8px 12px;
 }
-/* line 117, Module.scss */
 .neos.neos-module.neos-module-management-history .neos-history-day .neos-history-events .neos-history-event .neos-history-sub-event {
+  align-items: center;
   display: flex;
   flex-direction: row;
-  align-items: center;
 }
-/* line 123, Module.scss */
 .neos.neos-module.neos-module-management-history .neos-history-day .neos-history-events .neos-history-event .neos-history-sub-event + .neos-history-sub-event {
   margin-top: 8px;
 }
-/* line 127, Module.scss */
 .neos.neos-module.neos-module-management-history .neos-history-day .neos-history-events .neos-history-event .neos-history-event-user {
-  border-radius: 50%;
-  width: 32px;
-  height: 32px;
-  margin-right: 0;
-  float: none;
-  border: none;
   background: #007fb2;
+  border: none;
+  border-radius: 50%;
+  flex-shrink: 0;
+  float: none;
+  font-size: 12px;
+  height: 32px;
+  justify-content: center;
+  line-height: 32px;
+  margin-right: 0;
   overflow: hidden;
   text-align: center;
-  line-height: 32px;
-  font-size: 12px;
-  justify-content: center;
-  flex-shrink: 0;
+  width: 32px;
 }
-/* line 143, Module.scss */
 .neos.neos-module.neos-module-management-history .neos-history-day .neos-history-events .neos-history-event .neos-history-event-description {
-  padding: 4px 0 4px 16px;
-  margin-right: 0;
   line-height: 16px;
+  margin-right: 0;
+  padding: 4px 0 4px 16px;
 }
-/* line 148, Module.scss */
 .neos.neos-module.neos-module-management-history .neos-history-day .neos-history-events .neos-history-event .neos-history-event-description a {
   text-decoration: underline;
 }
-/* line 152, Module.scss */
 .neos.neos-module.neos-module-management-history .neos-history-day .neos-history-events .neos-history-event .neos-history-event-description .neos-history-event-details {
   cursor: pointer;
   user-select: none;
 }
-/* line 157, Module.scss */
 .neos.neos-module.neos-module-management-history .neos-history-day .neos-history-events .neos-history-event .neos-history-event-description .neos-popover {
   width: 600px;
 }
-/* line 160, Module.scss */
 .neos.neos-module.neos-module-management-history .neos-history-day .neos-history-events .neos-history-event .neos-history-event-description .neos-popover .neos-popover-title i {
   vertical-align: top;
 }
-/* line 164, Module.scss */
 .neos.neos-module.neos-module-management-history .neos-history-day .neos-history-events .neos-history-event .neos-history-event-description .neos-popover table {
   width: 100%;
 }
-/* line 167, Module.scss */
 .neos.neos-module.neos-module-management-history .neos-history-day .neos-history-events .neos-history-event .neos-history-event-description .neos-popover table th {
-  text-align: center;
   font-weight: bold;
+  text-align: center;
 }
-/* line 172, Module.scss */
 .neos.neos-module.neos-module-management-history .neos-history-day .neos-history-events .neos-history-event .neos-history-event-description .neos-popover table td,
 .neos.neos-module.neos-module-management-history .neos-history-day .neos-history-events .neos-history-event .neos-history-event-description .neos-popover table th {
   height: auto;
-  padding: 8px;
   line-height: 1;
+  padding: 8px;
 }
-/* line 178, Module.scss */
 .neos.neos-module.neos-module-management-history .neos-history-day .neos-history-events .neos-history-event .neos-history-event-description .neos-popover table td:first-child,
 .neos.neos-module.neos-module-management-history .neos-history-day .neos-history-events .neos-history-event .neos-history-event-description .neos-popover table th:first-child {
   padding-left: 0 !important;
 }
-/* line 182, Module.scss */
 .neos.neos-module.neos-module-management-history .neos-history-day .neos-history-events .neos-history-event .neos-history-event-description .neos-popover table td:last-child,
 .neos.neos-module.neos-module-management-history .neos-history-day .neos-history-events .neos-history-event .neos-history-event-description .neos-popover table th:last-child {
   padding-right: 0 !important;
 }
-/* line 186, Module.scss */
 .neos.neos-module.neos-module-management-history .neos-history-day .neos-history-events .neos-history-event .neos-history-event-description .neos-popover table td td,
 .neos.neos-module.neos-module-management-history .neos-history-day .neos-history-events .neos-history-event .neos-history-event-description .neos-popover table th td {
-  width: 50%;
   border: none;
+  width: 50%;
 }
-/* line 193, Module.scss */
 .neos.neos-module.neos-module-management-history .neos-history-day .neos-history-events .neos-history-event .neos-history-event-description .neos-popover ins, .neos.neos-module.neos-module-management-history .neos-history-day .neos-history-events .neos-history-event .neos-history-event-description .neos-popover ins a {
   color: #00a338;
   text-decoration: none;
 }
-/* line 198, Module.scss */
 .neos.neos-module.neos-module-management-history .neos-history-day .neos-history-events .neos-history-event .neos-history-event-description .neos-popover del, .neos.neos-module.neos-module-management-history .neos-history-day .neos-history-events .neos-history-event .neos-history-event-description .neos-popover del a {
   color: #ff460d;
   text-decoration: none;
 }
-/* line 211, Module.scss */
 .neos.neos-module.neos-module-management-history .neos-history-day:nth-child(even) .neos-history-events.neos-history-alignment .neos-history-date {
   margin-left: 100%;
 }
-/* line 215, Module.scss */
 .neos.neos-module.neos-module-management-history .neos-history-day:nth-child(even) .neos-history-events.neos-history-alignment .neos-history-event {
   margin-right: 10px;
 }
-/* line 219, Module.scss */
 .neos.neos-module.neos-module-management-history .neos-history-day:nth-child(even) .neos-history-events.neos-history-alignment .neos-history-event-arrow {
-  top: 50%;
-  right: -10px;
-  margin-top: -10px;
-  border-width: 10px 0 10px 10px;
   border-left-color: #323232;
+  border-width: 10px 0 10px 10px;
+  margin-top: -10px;
+  right: -10px;
+  top: 50%;
 }
-/* line 226, Module.scss */
 .neos.neos-module.neos-module-management-history .neos-history-day:nth-child(even) .neos-history-events.neos-history-alignment .neos-history-event-arrow:after {
-  border-width: 11px 0 11px 11px;
   border-left-color: #3f3f3f;
+  border-width: 11px 0 11px 11px;
   bottom: -11px;
   right: -1px;
 }
-/* line 240, Module.scss */
 .neos.neos-module.neos-module-management-history .neos-history-day:nth-child(odd) .neos-history-events.neos-history-alignment .neos-history-date {
   margin-left: -4px;
 }
-/* line 244, Module.scss */
 .neos.neos-module.neos-module-management-history .neos-history-day:nth-child(odd) .neos-history-events.neos-history-alignment .neos-history-event {
   margin-left: 10px;
 }
-/* line 248, Module.scss */
 .neos.neos-module.neos-module-management-history .neos-history-day:nth-child(odd) .neos-history-events.neos-history-alignment .neos-history-event-arrow {
-  top: 50%;
+  border-right-color: #323232;
+  border-width: 10px 10px 10px 0;
   left: -10px;
   margin-top: -10px;
-  border-width: 10px 10px 10px 0;
-  border-right-color: #323232;
+  top: 50%;
 }
-/* line 255, Module.scss */
 .neos.neos-module.neos-module-management-history .neos-history-day:nth-child(odd) .neos-history-events.neos-history-alignment .neos-history-event-arrow:after {
-  border-width: 11px 11px 11px 0;
   border-right-color: #3f3f3f;
+  border-width: 11px 11px 11px 0;
   bottom: -11px;
   left: -1px;
 }
+
+/*# sourceMappingURL=Module.css.map */

@@ -3,4 +3,4 @@
     inspector:
       views:
         nodeInfo:
-          view: 'AE.History/Views/NodeInfoView'
+          view: 'Neos.Neos/Inspector/Views/NodeInfoView'
