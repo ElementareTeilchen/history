@@ -77,11 +77,11 @@ class HistoryController extends AbstractModuleController
      * @param integer $offset
      * @param integer $limit
      * @param string $site
-     * @param string $node
+     * @param string $nodeIdentifier
      *
      * @return void
      */
-    public function indexAction($offset = 0, $limit = 25, $site = null, $node = null) : void
+    public function indexAction($offset = 0, $limit = 25, $site = null, $nodeIdentifier = null) : void
     {
         $numberOfSites = 0;
         // In case a user can only access a single site, but more sites exists
@@ -102,7 +102,7 @@ class HistoryController extends AbstractModuleController
             $limit + 1,
             'live',
             $site,
-            $node
+            $nodeIdentifier
         )->toArray();
 
         $nextPage = null;
@@ -139,7 +139,7 @@ class HistoryController extends AbstractModuleController
         $firstEvent = \current($events);
         if ($firstEvent !== false) {
             $contentContext = $this->createContentContext('live');
-            $actualNode = $contentContext->getNodeByIdentifier($node);
+            $actualNode = $contentContext->getNodeByIdentifier($nodeIdentifier);
             if ($actualNode) {
                 $firstEvent = [
                     'data' => [
@@ -147,7 +147,7 @@ class HistoryController extends AbstractModuleController
                         'documentNodeType' => $actualNode->getNodeType()->getName(),
                     ],
                     'node' => $actualNode,
-                    'nodeIdentifier' => $node,
+                    'nodeIdentifier' => $nodeIdentifier,
                 ];
             }
         }
@@ -156,7 +156,7 @@ class HistoryController extends AbstractModuleController
             'eventsByDate' => $eventsByDate,
             'firstEvent' => $firstEvent,
             'nextPage' => $nextPage,
-            'node' => $node,
+            'nodeIdentifier' => $nodeIdentifier,
             'site' => $site,
             'sites' => $sites,
         ]);

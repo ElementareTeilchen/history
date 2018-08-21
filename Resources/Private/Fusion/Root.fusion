@@ -6,7 +6,7 @@ AE.History.HistoryController.index = Template {
     nextPage = ${nextPage}
     sites = ${sites}
     site = ${site}
-    node = ${node}
+    nodeIdentifier = ${nodeIdentifier}
     firstEvent = ${firstEvent}
 
     eventRenderer = AE.History:History.EventRenderer
@@ -16,7 +16,7 @@ prototype(AE.History:History.EventRenderer) < prototype(Template) {
     templatePath = 'resource://AE.History/Private/Templates/History/Index.html'
     sectionName = 'eventElement'
     event = ${event}
-    node = ${node}
+    nodeIdentifier = ${nodeIdentifier}
     site = ${site}
 
     content = Array {
@@ -39,13 +39,13 @@ prototype(AE.History:History.EventRenderer) < prototype(Template) {
             event = ${event}
             @if.hasContentEvents = ${Array.length(contentEvents) > 0}
             @if.documentNotRemoved = ${documentEvents[0].eventType != 'Node.Removed'}
-            @if.notDetailedView = ${node == null}
+            @if.notDetailedView = ${nodeIdentifier == null}
         }
 
         contentEvents = Collection {
             collection = ${contentEvents}
             itemName = 'subEvent'
-            @if.detailedView = ${node != null}
+            @if.detailedView = ${nodeIdentifier != null}
 
             itemRenderer = Case {
                 default {
