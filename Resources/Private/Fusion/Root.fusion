@@ -80,40 +80,40 @@ prototype(AE.History:History.PublishedNode.AbstractSubEvent) < prototype(Templat
 
 prototype(AE.History:History.PublishedNode.Node.Adopt) < prototype(AE.History:History.PublishedNode.AbstractSubEvent) {
     descriptionTranslationId = 'history.eventDescription.node.adopted'
-    descriptionTranslationArguments = ${[this.user, Neos.Rendering.renderDimensions(subEvent.data.targetDimensions), String.firstLetterToLowerCase(I18n.translate(Neos.Rendering.labelForNodeType(subEvent.data.nodeType))), this.linkedNode]}
+    descriptionTranslationArguments = ${[this.user, Neos.Rendering.renderDimensions(subEvent.data.targetDimensions), I18n.translate(Neos.Rendering.labelForNodeType(subEvent.data.nodeType)), this.linkedNode]}
 }
 
 prototype(AE.History:History.PublishedNode.Node.LabelChanged) < prototype(AE.History:History.PublishedNode.AbstractSubEvent) {
     descriptionTranslationId = 'history.eventDescription.node.renamed'
-    descriptionTranslationArguments = ${[this.user, String.firstLetterToLowerCase(I18n.translate(Neos.Rendering.labelForNodeType(subEvent.data.nodeType))), subEvent.data.oldLabel, subEvent.data.newLabel]}
+    descriptionTranslationArguments = ${[this.user, I18n.translate(Neos.Rendering.labelForNodeType(subEvent.data.nodeType)), subEvent.data.oldLabel, subEvent.data.newLabel]}
 }
 
 prototype(AE.History:History.PublishedNode.Node.Added) < prototype(AE.History:History.PublishedNode.AbstractSubEvent) {
     descriptionTranslationId = 'history.eventDescription.node.added'
-    descriptionTranslationArguments = ${[this.user, String.firstLetterToLowerCase(I18n.translate(Neos.Rendering.labelForNodeType(subEvent.data.nodeType))), subEvent.data.nodeLabel]}
+    descriptionTranslationArguments = ${[this.user, I18n.translate(Neos.Rendering.labelForNodeType(subEvent.data.nodeType)), subEvent.data.nodeLabel]}
 }
 
 prototype(AE.History:History.PublishedNode.Node.Removed) < prototype(AE.History:History.PublishedNode.AbstractSubEvent) {
     descriptionTranslationId = 'history.eventDescription.node.removed'
-    descriptionTranslationArguments = ${[this.user, String.firstLetterToLowerCase(I18n.translate(Neos.Rendering.labelForNodeType(subEvent.data.nodeType))), subEvent.data.nodeLabel]}
+    descriptionTranslationArguments = ${[this.user, I18n.translate(Neos.Rendering.labelForNodeType(subEvent.data.nodeType)), subEvent.data.nodeLabel]}
 }
 
 prototype(AE.History:History.PublishedNode.Node.Copy) < prototype(AE.History:History.PublishedNode.AbstractSubEvent) {
     descriptionTranslationId = 'history.eventDescription.node.copied'
-    descriptionTranslationArguments = ${[this.user, String.firstLetterToLowerCase(I18n.translate(Neos.Rendering.labelForNodeType(subEvent.data.nodeType))), subEvent.data.nodeLabel]}
+    descriptionTranslationArguments = ${[this.user, I18n.translate(Neos.Rendering.labelForNodeType(subEvent.data.nodeType)), subEvent.data.nodeLabel]}
 }
 
 prototype(AE.History:History.PublishedNode.Node.Move) < prototype(AE.History:History.PublishedNode.AbstractSubEvent) {
     descriptionTranslationId = 'history.eventDescription.node.moved'
-    descriptionTranslationArguments = ${[this.user, String.firstLetterToLowerCase(I18n.translate(Neos.Rendering.labelForNodeType(subEvent.data.nodeType))), subEvent.data.nodeLabel]}
+    descriptionTranslationArguments = ${[this.user, I18n.translate(Neos.Rendering.labelForNodeType(subEvent.data.nodeType)), subEvent.data.nodeLabel]}
 }
 
 prototype(AE.History:History.PublishedNode.Node.Updated) < prototype(AE.History:History.PublishedNode.AbstractSubEvent) {
     descriptionTranslationId = 'history.eventDescription.node.changed'
-    descriptionTranslationArguments = ${[this.user, String.firstLetterToLowerCase(I18n.translate(Neos.Rendering.labelForNodeType(subEvent.data.nodeType))), subEvent.data.nodeLabel]}
+    descriptionTranslationArguments = ${[this.user, I18n.translate(Neos.Rendering.labelForNodeType(subEvent.data.nodeType)), subEvent.data.nodeLabel]}
 }
 
 prototype(AE.History:History.PublishedNode.ContentChanged) < prototype(AE.History:History.PublishedNode.AbstractSubEvent) {
     descriptionTranslationId = 'history.eventDescription.node.changedContent'
-    descriptionTranslationArguments = ${[this.user, String.firstLetterToLowerCase(I18n.translate(Neos.Rendering.labelForNodeType(event.data.nodeType))), event.data.nodeLabel]}
+    descriptionTranslationArguments = ${[this.user, I18n.translate(Neos.Rendering.labelForNodeType(event.data.nodeType)), event.data.nodeLabel]}
 }
